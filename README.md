@@ -1,36 +1,42 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ✨ newverse
 
-## Getting Started
+> Next.js, TypeScript, shadcn/ui를 사용하여 만드는 나만의 뉴스 피드 사이트
 
-First, run the development server:
+이 프로젝트는 다양한 언론사의 최신 뉴스를 모아보고, 카테고리별 분류 및 키워드 검색을 통해 원하는 뉴스를 쉽게 찾아볼 수 있는 웹 애플리케이션입니다. `toolverse`의 시리즈 프로젝트입니다.
+
+---
+
+## 🚀 주요 기능 (Features)
+
+- [ ] 실시간 뉴스 피드 표시
+- [ ] 카테고리별 뉴스 분류 (예: 기술, 스포츠, 경제 등)
+- [ ] 키워드를 통한 뉴스 기사 검색
+- [ ] 인기 뉴스 랭킹 표시
+
+## 🛠️ 기술 스택 (Tech Stack)
+
+* **Frontend**: React, Next.js, TypeScript
+* **Styling**: Tailwind CSS, shadcn/ui
+* **Backend**: Next.js API Routes
+* **Data Fetching**: News API (예정)
+* **Deployment**: Vercel (예정)
+
+## 🏁 시작하기 (Getting Started)
+
+이 프로젝트를 로컬 컴퓨터에서 실행하려면 다음 단계를 따르세요.
 
 ```bash
+# 1. 이 저장소를 복제합니다.
+git clone [https://github.com/](https://github.com/)[lunalism]/newverse.git
+
+# 2. 프로젝트 폴더로 이동합니다.
+cd newverse
+
+# 3. 필요한 패키지를 설치합니다.
+npm install
+
+# 4. 개발 서버를 실행합니다.
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+브라우저에서 http://localhost:3000으로 접속하여 결과를 확인할 수 있습니다.
