@@ -3,6 +3,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local"; // next/font/local을 import 합니다.
 import "./globals.css";
+import { Header } from "@/components/main/Header";
 
 // 다운로드한 Pretendard 폰트를 불러옵니다.
 const pretendard = localFont({
@@ -23,8 +24,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ko">
+      
       {/* pretendard.className을 body에 추가해 폰트를 전역으로 적용합니다. */}
-      <body className={pretendard.className}>{children}</body>
+      <body className={pretendard.className}>
+        <Header />
+        {children}
+      </body>
     </html>
   );
 }
