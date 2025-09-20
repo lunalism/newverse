@@ -27,9 +27,9 @@ export default function RootLayout({
     <html lang="ko">
       
       {/* pretendard.className을 body에 추가해 폰트를 전역으로 적용합니다. */}
-      <body className={pretendard.className}>
+      <body className={`${pretendard.className} min-h-screen flex flex-col`}>
         <Header />
-        <main className="container mx-auto px-4 py-8">{children}</main>
+        <main className="container mx-auto px-4 py-8 flex-grow">{children}</main>
         <Footer />
       </body>
     </html>
