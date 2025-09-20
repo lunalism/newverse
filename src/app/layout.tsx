@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local"; // next/font/local을 import 합니다.
 import "./globals.css";
 import { Header } from "@/components/main/Header";
+import Footer from "@/components/main/Footer";
 
 // 다운로드한 Pretendard 폰트를 불러옵니다.
 const pretendard = localFont({
@@ -28,7 +29,8 @@ export default function RootLayout({
       {/* pretendard.className을 body에 추가해 폰트를 전역으로 적용합니다. */}
       <body className={pretendard.className}>
         <Header />
-        {children}
+        <main className="container mx-auto px-4 py-8">{children}</main>
+        <Footer />
       </body>
     </html>
   );
