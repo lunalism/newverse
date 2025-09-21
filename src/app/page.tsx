@@ -48,7 +48,7 @@ export default async function Home() {
         
         {/* 1. 메인 기사 */}
         {mainArticle && (
-          <Link href={mainArticle.url} target="_blank">
+          <Link href={`/article?url=${encodeURIComponent(mainArticle.url)}`} target="_blank">
             <Card className="hover:border-blue-500 transition-all">
               <CardContent className="p-4 grid md:grid-cols-2 gap-6 items-center">
                 {mainArticle.urlToImage && (
@@ -75,7 +75,7 @@ export default async function Home() {
         {/* 2. 하위 기사 그리드 */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {otherArticles.map((article, index) => (
-            <Link href={article.url} key={index} target="_blank">
+            <Link href={`/article?url=${encodeURIComponent(article.url)}`} key={index} target="_blank">
               <Card className="h-full hover:border-blue-500 transition-all">
                 <CardContent className="p-4 space-y-2">
                   {article.urlToImage && (
